@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
+    "ios-example": "react-native run-ios --scheme example --configuration example.Debug",
+    "ios-example2": "react-native run-ios --scheme example2 --configuration example2.Debug",
+    "pod-install": "cd ios && pod install --verbose",
     "test": "jest"
   },
   "dependencies": {

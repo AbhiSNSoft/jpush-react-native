@@ -20,9 +20,28 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
-  // JPush初始化配置
-  [JPUSHService setupWithOption:launchOptions appKey:@"129c21dc4cb5e6f6de194003"
-                        channel:@"dev" apsForProduction:YES];
+  
+  
+  NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+  NSLog(@"bundleIdentifier: %@", bundleIdentifier);
+  
+  
+  if ([bundleIdentifier  isEqualToString: @"io.jiguang.test.push"]) {
+    // JPush初始化配置
+    [JPUSHService setupWithOption:launchOptions appKey:@"00dfdedd09517a57d4eb67e8"
+                          channel:@"dev" apsForProduction:NO];
+  } else if ([bundleIdentifier isEqualToString: @"io.jiguang.test.push.ex2"]) {
+     
+     // JPush初始化配置
+     [JPUSHService setupWithOption:launchOptions appKey:@"60b66c28e26d0305b79905ac"
+                           channel:@"dev" apsForProduction:NO];
+   } else if ([bundleIdentifier isEqualToString: @"io.jiguang.test.push.hello"]) {
+      
+      // JPush初始化配置
+      [JPUSHService setupWithOption:launchOptions appKey:@"129c21dc4cb5e6f6de194003"
+                            channel:@"dev" apsForProduction:NO];
+    }
+  
   // APNS
   JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];
   if (@available(iOS 12.0, *)) {
