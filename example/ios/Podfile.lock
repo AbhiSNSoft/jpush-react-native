@@ -11,9 +11,9 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - JCore (1.6.0):
+  - JCore (1.8.0):
     - React
-  - JPush (2.7.0):
+  - JPush (2.8.1):
     - React
   - React (0.60.5):
     - React-Core (= 0.60.5)
@@ -167,8 +167,8 @@ SPEC CHECKSUMS:
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
   glog: 1f3da668190260b06b429bb211bfbee5cd790c28
-  JCore: 54f06adbbb4a28c11e8bd2466d2a0656ec2f16c9
-  JPush: 8fc065186252835feb4959274fc7bd140dfce2c4
+  JCore: 1329e2407872f05e11e127123e9764ca3f9ee124
+  JPush: b389c8181b1a5f8978cd06a3811c76fbd848862c
   React: 53c53c4d99097af47cf60594b8706b4e3321e722
   React-Core: ba421f6b4f4cbe2fb17c0b6fc675f87622e78a64
   React-cxxreact: 8384287780c4999351ad9b6e7a149d9ed10a2395
@@ -190,4 +190,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 2d51da6f6de1005d1437b85332a1464eeda5bfbc
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.3

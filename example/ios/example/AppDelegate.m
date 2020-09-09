@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
   // JPush初始化配置
-  [JPUSHService setupWithOption:launchOptions appKey:@"129c21dc4cb5e6f6de194003"
+  [JPUSHService setupWithOption:launchOptions appKey:@"00dfdedd09517a57d4eb67e8"
                         channel:@"dev" apsForProduction:YES];
   // APNS
   JPUSHRegisterEntity * entity = [[JPUSHRegisterEntity alloc] init];

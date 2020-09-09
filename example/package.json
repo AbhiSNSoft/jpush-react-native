@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
+    "ios-example": "react-native run-ios --scheme example --configuration example.Debug",
+    "ios-example2": "react-native run-ios --scheme example2 --configuration example2.Debug",
+    "pod-install": "cd ios && pod install --verbose",
     "test": "jest"
   },
   "dependencies": {
-    "jcore-react-native": "1.7.0",
-    "jpush-react-native": "2.7.5",
+    "jcore-react-native": "1.8.0",
+    "jpush-react-native": "2.8.1",
     "react": "16.8.6",
     "react-native": "0.60.5"
   },
