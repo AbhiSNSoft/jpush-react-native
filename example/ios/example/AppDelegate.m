@@ -24,7 +24,7 @@
   
   NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
   NSLog(@"bundleIdentifier: %@", bundleIdentifier);
-  
+//   upload device token success, current token is : ac5787611c7bc272bd7d61fde5aab7fb3fad2a7438622638116117672db80c2b
   
   if ([bundleIdentifier  isEqualToString: @"io.jiguang.test.push"]) {
     // JPush初始化配置
@@ -38,7 +38,7 @@
    } else if ([bundleIdentifier isEqualToString: @"io.jiguang.test.push.hello"]) {
       
       // JPush初始化配置
-      [JPUSHService setupWithOption:launchOptions appKey:@"129c21dc4cb5e6f6de194003"
+      [JPUSHService setupWithOption:launchOptions appKey:@"4ee7b57d9f3b390bebee828b"
                             channel:@"dev" apsForProduction:NO];
     }
   
